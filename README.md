@@ -1,0 +1,2 @@
+# ESP32-
+SimpleHTTPServerを使用したESP32のソフトウェアアップデート
