@@ -6,7 +6,9 @@ import utime
 from machine import Pin
 
 
-execfile("wifi-password.py")
+#execfile("wifi-password.py")
+SSID_NAME = ""
+SSID_PASS = ""
 
 # サーバーのIPアドレスとポート番号
 SERVER_IP = ''
