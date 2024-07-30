@@ -12,9 +12,13 @@ SimpleHTTPServerを使用したESP32のソフトウェアアップデート
 
 ### OTA.py
 ESP32用のコードで, ESP32をクライアントとし遠隔更新を行うためのコードです.
+
   ・connect_wifi()でSSID_NAME(WI-Fiの名前), SSID_PASS(Wi-Fiのパスワード)を参照してWi-Fi接続を行う.
+
   ・notify_server()では引数にサーバーIP：サーバーポート：Pathを指定して, サーバー接続やタスク完了のリクエストを送信する.
+  
   ・download_update()では更新を行うためのリクエストを行い, 返ってきたレスポンスのファイルをクライアント内に保存, または対象のファイルを更新する.
+  
   ・Wi-Fi接続の状態と更新完了後の動作を可視化するためled_blueとblink_led()を使用し, 内臓LEDを点灯・点滅させる.
 
 ## 実行の仕方
